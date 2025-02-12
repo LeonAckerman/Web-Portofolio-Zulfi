@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhamad Zulfi Ridwan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+ <style>
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+
+#about {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.carousel-item img {
+    max-height: 400px; /* Supaya gambar nggak terlalu besar */
+    object-fit: cover;
+}
+.project img {
+    width: 100%; /* Supaya gambar penuh */
+    max-height: 300px; /* Biar nggak terlalu besar */
+    object-fit: cover; /* Biar gambar tidak gepeng */
+}
+
+table {
+    background-color: #f8f9fa; /* Warna abu-abu muda */
+    border-radius: 5px;
+}
+
+.cv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 50vh; /* Biar tetap di tengah layar */
+}
+
+.cv-image {
+    max-width: 50%; /* Ubah ukuran maksimal, misalnya 50% */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pencapaian {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.achievement-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.achievement-item:hover {
+  transform: scale(1.05);
+
+}
+
+</style>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#biodata">Biodata/CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan/Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pencapaian">Pencapaian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center p-5 bg-light">
+        <div class="container">
+            <img src="zul.jpg" alt="Foto Profil" class="rounded-circle img-thumbnail" width="150">
+            <h1 class="mt-3">Muhamad Zulfi Ridwan</h1>
+            <p>Pelajar SMK - Rekayasa Perangkat Lunak</p>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="p-5">
+        <div class="container">
+        <text-center bg-light">
+            <h2>About Me</h2>
+            <p>Saya adalah seorang pelajar SMK yang memiliki minat besar dalam dunia teknologi, khususnya dalam pengembangan web dan pemrograman.</p>
+            <p>Di sini saya membuat contoh website Portofolio umum dengan gabungan syntax HTML, CSS, dan JavaScript. Tentunya dengan menggunakan Bootstrap seperti yang di instruksikan oleh A fajar di tempat PKL</p>
+            <p>Bila ada kritik atau saran, saya sangat berkenan dan akan mengevaluasi kekurangan dari website yang saya buat, karena saya yakin dengan kapasitas saya sekarang yang seorang siswa sekolah menengah 
+               kejuruan biasa yang pastinya masih membutuhkan pengalaman yang sangat banyak.</p>
+             <p>Oleh karena itu mohon bimbingannya selama PKL untuk seluruh pembimbing yang ada di aktara khususnya untuk A fajar</p>
+       </div>
+    </section>
+   
+     <section id="biodata">
+    <section class="container mt-5">
+    <h2 class="text-center mb-4">Biodata</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <td>Muhamad Zulfi Ridwan</td>
+                </tr>
+                <tr>
+                    <th>Tempat/Tanggal Lahir</th>
+                    <td>Tasikmalaya / 5</td>
+                </tr>
+                <tr>
+                    <th>Jenis Kelamin</th>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <th>Alamat</th>
+                    <td>Jl. Lewobabakan</td>
+                </tr>
+                <tr>
+                    <th>Agama</th>
+                    <td>Islam</td>
+                </tr>
+                <tr>
+                    <th>Anak Ke</th>
+                    <td>Dua dari tiga bersaudara</td>
+                </tr>
+                <tr>
+                    <th>No Telepon</th>
+                    <td>083103904585</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<br>
+<section class="container mt-5">
+    <h2 class="text-center mb-4">CV</h2>
+    <img width="370px" height="500px" src="cv.jpg" alt="CV Saya" class="cv-image">
+</div>
+
+<section id="pendidikan" class="p-5 bg-light">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li>SD: SDN Lewo 2 (2014-2020)</li>
+            <li>SMP: SMPN 6 TSM (2020-2023)</li>
+            <li>SMK: SMK ARTANITA (sekarang)</li>
+            <li>Pelatihan/Training: Program Latihan Singkat Microsoft Office di Kampus LP3I</li>
+            </ul>
+        </div>
+    </section>
+
+
+<section id="skill" class="p-5 bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Bootstrap Framework</li>
+                <li>SQL & Database Management</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+
+<section id="projects" class="p-5">
+    <div class="container text-center">
+        <h2>Projects</h2>
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pribadi.jpg" class="d-block w-100" alt="Project 1">
+                    <div class="carousel-caption bg-dark bg-opacity-50 p-2 rounded">
+                        <h5>Project 1</h5>
+                        <p>website 3 element(html, css, dan javascript).</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="webnis.jpg" class="d-block w-100" alt="Project 2">
+                    <div class="carousel-caption bg-dark bg-opacity-50 p-1 rounded">
+                        <h5>Project 2</h5>
+                        <p>Membuat Tampilan mentah Website bisnis yang bisa di gunakan berbagai permintaan klien bisnis.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="keterangan.jpg" class="d-block w-100" alt="Project 3">
+                    <div class="carousel-caption bg-dark bg-opacity-50 p-2 rounded">
+                        <h5>Project 3</h5>
+                        <p>berhasil nenyelesaikan project ms.office</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tombol navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>    
+
+
+<section id="pencapaian" class="container my-5">
+    <h2 class="text-center mb-4">Pencapaian Saya</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="sertifikat.jpg" class="card-img-top" alt="Pencapaian 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sertifikat Lp3I</h5>
+                    <p class="card-text">Menyelesaikan training Microsoft Office di kampus LP3I.</p>
+                </div>
+            </div>
+        </div>
+        
+            <div class="card">
+                <img src="quiz.jpg" class="card-img-top" alt="Pencapaian 2">
+                <div class="card-body">
+                    <h5 class="card-title">Juara ke 2 lomba quiz MS.Office </h5>
+                    <p class="card-text">Mendapatkan juara ke 2 dalam lomba quiz </p>
+                </div>
+            </div>
+        </div>
+            <div class="card">
+                <img src="pramuka.jpg" class="card-img-top" alt="Pencapaian 3">
+                <div class="card-body">
+                    <h5 class="card-title">Perkemahan Masa tamu</h5>
+                    <p class="card-text">Mengikuti perkemahan dan survive di alam terbuka</p>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="card">
+                <img src="KII.jpg" class="card-img-top" alt="Pencapaian 4">
+                <div class="card-body">
+                    <h5 class="card-title">Kunjungan Industri</h5>
+                    <p class="card-text">Mengunjungi beberapa industri di yogyakarta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <div class="container my-5" id="contact">
+        <h2 class="text-center mb-4">Kontak Saya</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap Anda">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Kirim</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Muhamad Zulfi Ridwan. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/083103904585" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://mzulfiridwan57@gmail.com" class="text-white mx-2"><i class="fas fa-envelope"></i></a> 
+                <a href="https://www.youtube.com/@leoackerman2502" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
